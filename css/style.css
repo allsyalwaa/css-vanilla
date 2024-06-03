@@ -1,0 +1,309 @@
+:root {
+  --primary: #ff5c8d;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+  /* min-height: 5000px; */
+}
+
+/* Navbar Section*/
+
+.navbar {
+  /* width: 100%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #ffffff; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  margin: 1rem 1.5rem;
+  padding: 0.5rem 7%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--bg);
+  background-color: #ffffff;
+  border-radius: 5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+.navbar .nav-logo,
+.navbar .navbar-extra {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .nav-logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .nav-logo .logo a {
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-family: "Baloo Bhaijaan 2";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #e43a6d;
+}
+
+.navbar .signin a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.navbar .signup,
+.hero .content .button .cta,
+.features .content .main-features .btn-test,
+.about .content .main-about .btn-faq {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgba(255, 92, 141, 0.77);
+  border-radius: 5rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .signup a,
+.hero .content .button .cta a,
+.features .content .main-features .btn-test a,
+.about .content .main-about .btn-faq a {
+  color: #ffffff;
+}
+
+/* Hero Section */
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 92, 141, 1) 10%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+.hero .content,
+.features,
+.about {
+  align-items: center;
+  justify-content: center;
+}
+.hero .content .landing-title {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 7% 1.4rem;
+  align-items: center;
+}
+
+.hero .content .landing-title h1 {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 2.3rem;
+  padding: 0 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.hero .content .landing-title .title {
+  display: inline-block;
+  padding: 0 2rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: #ff4b81;
+  border-radius: 5rem;
+}
+
+.hero .content .landing-title .title h1 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.hero .content p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 0rem 18% 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.hero .content .button,
+.hero .content .landing-img {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .content .landing-img img {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 38%;
+  padding: 1rem;
+}
+
+/* Features Section */
+.features .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features .content .main-features {
+  justify-content: center;
+  padding: 8rem 7% 1.4rem;
+  align-items: center;
+  width: 45%;
+  height: 100vh;
+  background-color: #fff3f6;
+}
+
+.features .content .main-features .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 1rem;
+  width: 40%;
+}
+
+.features .content .main-features p,
+.about .content .main-about p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 0 1rem 1rem;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.features .content .main-features .btn-test,
+.about .content .main-about .btn-faq {
+  margin: 0 1rem;
+}
+
+.features .content .features-img,
+.about .content .about-img {
+  text-align: center;
+  width: 55%;
+  padding: 8rem 7%;
+}
+.features .content .features-img img {
+  width: 80%;
+}
+
+/* About Section */
+
+.about .content {
+  display: flex;
+}
+
+.about .main-about {
+  justify-content: center;
+  margin: 9rem 0;
+  padding: 3rem 7%;
+  align-items: center;
+  right: 0;
+  width: 45%;
+  height: fit-content;
+  border-bottom-left-radius: 30rem;
+  border-top-left-radius: 30rem;
+  background-color: #fff3f6;
+  text-align: center;
+}
+
+.about .content .main-about .title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 1rem;
+}
+
+.about .content .about-img img {
+  width: 65%;
+}
+
+/* Contact Section */
+
+footer {
+  background: rgb(255, 92, 141, 0.63);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
